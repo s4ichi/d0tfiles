@@ -1,6 +1,6 @@
 [user]
-  name = s4ichi
-  email = s.wakeup31@gmail.com
+  name = takamasa-saichi
+  email = takamasa-saichi@cookpad.com
 [color]
   ui = auto
 [alias]
@@ -28,4 +28,12 @@
 	quotepath = false
   pager = LESSCHARSET=utf-8 less -cm
 [url "git@github.com:"]
-    insteadOf = https://github.com/
+  insteadOf = https://github.com/
+[merge "mergepbx"]
+	name = Xcode project files merger
+	driver = mergepbx %O %A %B
+	note = auto-generated configuration by cpad2 upgrade
+[github]
+	token = 6c0ada762cfbb52dc6b14560a086bfaeaa1f092d
+[gpg]
+	program = gpg
