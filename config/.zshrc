@@ -1,4 +1,5 @@
 source ${HOME}/.zsh/00-machine.zsh
+source ~/.cpad2/profile
 
 # before load
 for f in $(ls ${HOME}/.zsh/before/*.zsh | sort); do
@@ -57,7 +58,7 @@ precmd() {
 
 # completion
 autoload -U compinit
-compinit
+compinit -u
 autoload -U bashcompinit
 bashcompinit
 zstyle ":completion:*:commands" rehash 1
