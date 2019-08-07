@@ -37,3 +37,8 @@
 	token = 6c0ada762cfbb52dc6b14560a086bfaeaa1f092d
 [gpg]
 	program = gpg
+
+[includeIf "gitdir:~/src/github.com/"]
+	path = ~/.gitconfig.default
+[includeIf "gitdir:~/go/src/github.com/"]
+	path = ~/.gitconfig.default
