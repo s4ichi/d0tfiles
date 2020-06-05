@@ -1,6 +1,7 @@
 [user]
   name = takamasa-saichi
-  email = takamasa-saichi@cookpad.com
+	email = takamasa-saichi@cookpad.com
+	signingkey = CB2C33215050DF56AB949B9BAD45D54723E29B4D
 [color]
   ui = auto
 [alias]
@@ -26,7 +27,8 @@
 [core]
 	precomposeunicode = true
 	quotepath = false
-  pager = LESSCHARSET=utf-8 less -cm
+	# pager = LESSCHARSET=utf-8 less -cm
+	pager = delta --file-color="#c7c7c7" --hunk-color="#c7c7c7" --theme='Dracula'
 [url "git@github.com:"]
   insteadOf = https://github.com/
 [merge "mergepbx"]
@@ -37,6 +39,11 @@
 	token = 6c0ada762cfbb52dc6b14560a086bfaeaa1f092d
 [gpg]
 	program = gpg
+[commi]
+	gpgsign = true
+
+[interactive]
+    diffFilter = delta --color-only
 
 [includeIf "gitdir:~/src/github.com/"]
 	path = ~/.gitconfig.default
